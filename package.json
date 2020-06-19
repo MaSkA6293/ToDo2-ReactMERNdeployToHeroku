@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "client:install": "npm install --prefix client",
-    "client:build": "npm run build --prefix client"
+    "client:build": "npm run build --prefix client",
+    "dev": ""
   },
   "author": "",
   "license": "ISC",
