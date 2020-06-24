@@ -2,7 +2,7 @@
   border-bottom: 4px solid #89949e;
   max-height: calc(100vh / 2.5);
   overflow-y: auto;
-  overflow-x: visible;
+  overflow-x: none;
   z-index: 3;
   transition: all ease 2s;
   &_activ {

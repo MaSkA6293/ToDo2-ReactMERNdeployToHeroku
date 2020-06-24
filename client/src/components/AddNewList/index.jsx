@@ -67,7 +67,7 @@ const AddNewList = ({
         ))}
       </ul>
       {isOpenPanelAddList && (
-        <div className="addNewList list">
+        <div className="addNewList ">
           <input
             type="text"
             placeholder="    Название списка"

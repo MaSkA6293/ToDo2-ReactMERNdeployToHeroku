@@ -29,6 +29,7 @@
   top: 50%;
   width: calc(100vw - 30px);
   height: calc(100vh - 100px);
+  min-height: 400px;
   transform: translate(-50%, -50%);
   box-shadow: 5px 5px 18px -5px #564d4d;
   background-color: lighten($color: #f1e8d2, $amount: 10%);
