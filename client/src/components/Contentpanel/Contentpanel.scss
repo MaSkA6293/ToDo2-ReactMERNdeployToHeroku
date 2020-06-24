@@ -45,9 +45,8 @@
     white-space: nowrap;
     display: flex;
     margin-bottom: 10px;
-    max-width: 600px;
-    @media (max-width: 850px) {
-    }
+    max-width: 95%;
+
     &:hover img {
       opacity: 1;
     }
