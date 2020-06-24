@@ -14,7 +14,6 @@ const App = ({
   loadingList,
   toggleLoadingList,
   setColors,
-  setTasks,
   openPanelAddList,
 }) => {
   const history = useHistory();
@@ -45,6 +44,7 @@ const App = ({
 
   useEffect(() => {
     const id = history.location.pathname.split("lists/")[1];
+    console.log(id);
     if (lists) {
       const activ = lists.find((li) => li._id === id);
 

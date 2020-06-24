@@ -7,10 +7,8 @@ import edit from "../../assets/img/edit.svg";
 import iconPlus from "../../assets/img/plus.svg";
 import iconDelet from "../../assets/img/delet.svg";
 import { ReactComponent as CheckBox } from "../../assets/img/checkbox.svg";
-
-import NewTask from "../NewTask";
-
 import { Link } from "react-router-dom";
+import NewTask from "../NewTask";
 
 const Contentpanel = ({
   item,
@@ -29,14 +27,17 @@ const Contentpanel = ({
     <div className="main">
       <div className="main__title title-main">
         <Link
-          to={`/lists/${item.id}`}
+          to={`/lists/${item._id}`}
           className="title-main__link"
-          onClick={() => onActivItem(item)}
+          onClick={() => {
+            onActivItem(item);
+          }}
         >
           <h2 className="title-main__title" style={{ color: item.color.hex }}>
             {item.name}
           </h2>
         </Link>
+
         <img
           className="title-main__picture"
           src={edit}
@@ -44,6 +45,7 @@ const Contentpanel = ({
           onClick={() => onEditNameList(item)}
         />
       </div>
+
       {!item.tasks.length && !stateApp.isOpenPanel && !empty && (
         <div className="main__noTask">Задачи отсутствуют</div>
       )}

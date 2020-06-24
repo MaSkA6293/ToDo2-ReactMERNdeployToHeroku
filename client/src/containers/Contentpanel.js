@@ -30,6 +30,7 @@ const Contentpanels = ({
   openPanelAddTask,
   addNewTask,
   closePanelAddNewTask,
+  onActivItem,
 }) => {
   const toggleCompleted = (_id, listId, completed) => {
     axios

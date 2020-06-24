@@ -37,9 +37,9 @@ const List = ({
                   onActivItem(item);
                   history.push(`/lists/${item._id}`);
                 }
-              : (e) => {
-                  history.push("/");
+              : () => {
                   onActivItem(null);
+                  history.push("/");
                 }
           }
         >
